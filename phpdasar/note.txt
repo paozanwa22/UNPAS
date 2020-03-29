@@ -1,0 +1,190 @@
+// Catatan poin mewakili isi pembahasan
+
+Belajar PHP untuk PEMULA | 1.Intro
+	Alasan dan yang akan di pelajari di seri ini.
+Belajar PHP untuk PEMULA | 2.SEJARAH & KARAKTERISTIK PHP
+	Rasmus Lerdorf 1994 "Personal Home Page" to "PHP: Hypertext Preprocessor
+Belajar PHP untuk PEMULA | 3.PERSIAPAN LINGKUNGAN PENGEMBANGAN
+	pertemuan1
+Belajar PHP untuk PEMULA | 4.SINTAKS PHP
+    pertemuan2
+Belajar PHP untuk PEMULA | 5.STRUKTUR KENDALI
+    
+Belajar PHP untuk PEMULA | 6.FUNCTION
+Belajar PHP untuk PEMULA | 7.ARRAY
+Belajar PHP untuk PEMULA | 8.ASSOCIATIVE ARRAY
+Belajar PHP untuk PEMULA | 9.GET & POST
+Belajar PHP untuk PEMULA | 10.DATABASE & MySQL
+Belajar PHP untuk PEMULA | 11.PHP & MySQL
+Belajar PHP untuk PEMULA | 12.INSERT & DELETE
+Belajar PHP untuk PEMULA | 13.UPDATE
+Belajar PHP untuk PEMULA | 14.SEARCHING
+Belajar PHP untuk PEMULA | 15.UPLOAD
+Belajar PHP untuk PEMULA | 16.REGISTRASI
+Belajar PHP untuk PEMULA | 17.LOGIN
+Belajar PHP untuk PEMULA | 18.SESSION
+Belajar PHP untuk PEMULA | 19.COOKIE (Remember Me)
+Belajar PHP untuk PEMULA | 20.PAGINATION
+Belajar PHP untuk PEMULA | 21.LIVE SEARCH (menggunakan AJAX)
+Belajar PHP untuk PEMULA | 22.LIVE SEARCH (menggunakan JQUERY)
+Belajar PHP untuk PEMULA | 23.PDF REPORTING
+Belajar PHP untuk PEMULA | 24.WEB HOSTING & DOMAIN NAME GRATIS
+Belajar PHP untuk PEMULA | 24.WEB HOSTING & DOMAIN NAME BERBAYAR
+
+
+/////////////////////Belajar PHP untuk PEMULA | 1.Intro
+<!-- Kenapa PHP? -->
+<!-- 1. relatif mudah untuk pemula -->
+
+<!-- contoh penulisan bahasa JAVA -->
+<!-- class HelloWorld {
+    public static void main( String args[] ){
+        System.out.println("Hello World");
+    }
+} -->
+
+<!-- contoh PHP -->
+<?php 
+    // echo "Hello World";
+?>
+
+<!-- 2. pre-requisite   cukup HTML + CSS -->
+<!-- 3. gratis & open source -->
+<!-- 4. dukungan komunitas -->
+<!-- 5. dokumentasi yang lengkap -->
+    <!-- http://php.net/manual/en/ -->
+<!-- 6. PHP dibuat khusus utuk web -->
+<!-- 7. kebanyakan website yang ada saat ini dubuat dengan PHP -->
+<!-- 8. banyak website besar dibuat dengan PHP -->
+<!-- 9. Content Management System yang menggunakan PHP -->
+    <!-- WORD PRESS, Joomla, drupal, moodle -->
+<!-- 10. Framework PHP -->
+    <!-- CodeIgniter, CakePHP, yiiframework, laravel, symfony -->
+
+<!-- apa yang akan dipelajari? -->
+    <!-- client-side vs server-side scripting -->
+    <!-- static vs. dynamic website -->
+    <!-- persiapan lingkungan pengembangan -->
+    <!-- sintaks PHP -->
+    <!-- array -->
+    <!-- request method -->
+    <!-- studi kasus website sederhana -->
+        <!-- database -->
+        <!-- CRUD (Create, Read, Update, Delete) -->
+        <!-- login & registrasi -->
+        <!-- session & cookie -->
+        <!-- ajax -->
+        <!-- upload file -->
+        <!-- reporting -->
+        <!-- web hosting -->
+<!-- apa yang harus di siapkan? -->
+    <!-- Code Editor -->
+    <!-- Web Server -->
+    <!-- Web Browser -->
+    <!-- Database Server -->
+<!-- Sudah Siap ? -->
+
+
+/////////Belajar PHP untuk PEMULA | 2.SEJARAH & KARAKTERISTIK PHP
+Rasmus Lerdorf  1994 "Personal Home Page"
+
+pada awal-ya dia tidak bermaksud membuat bahasa pemrograman.
+    Dia awalnya membuat program untuk mengelola web peribadi-nya atau "Personal Home Page"
+jadi di dalam-nya dia membuat web form untuk terhubung ke dalam database untuk mengelola data-nya.
+pada saat pertama, dia memberi nama pada aplikasinya adalah
+--PHP/FI, 1994    //Personal Home Page/From Interpreter
+dan teryata banyak orang yang menyukai nya.
+--PHP Tools v.1, 1995
+--PHP Tools v.2, 1997   // Mulai dari sini, sudah banya orang yang ikut ngembangin karna Open Source
+--PHP 3, 1998      // ada dua orang yang ikut mengembangkan bahas PHP ini
+    Zeev Suraski & Andi Gutmans //dua orang ini yang nantinya membuat perusahaan 
+        Zend Technologies
+    mereka berdua berjasa untuk membuat parser di dalam php (parser adalah sebuah program untuk membaca sintak PHP supaya PHP nya bisa mengetahui bahasa yang kita tulis).
+    PHP: Hypertext Preprocessor //nama nya berubah
+--PHP 4, 2000
+    Zend Engine     //(mesin untuk mengelola PHP) yang diciptakan oleh perusahaan Zend Technologies.
+--PHP 5, 2004
+    -Zend Engine 2
+    -Object Oriented Programming (OOP)
+    -PHP Data Object (PDO) //Dengan menggunakan PDO, kita tidak perlu merubah isi program jika ingin beralih dari MySQL
+2008, PHP 4 berhenti di kembangkan
+    -Gerakan GoPHP5
+--PHP 6     
+    -ditunda, dan akhirnya diabaikan//Perojek di gagalkan 
+    -masalah di unicode //dikarnakan ingin menangani berbagai bahasa.
+    -PHP 5.4, 2010
+--PHP 7, 2014
+    Zend Engine 3  //masih berlanjud di kembangkan.
+
+icon php adalah elePHPand.
+
+//Karakteristik bahas PHP
+    -ekstensi file .php
+    -ditulis didalam tag php
+        -delimiter
+        -dawali dengan <?php
+        -diakhiri dengan ?>
+    -bisa digunakan bersamaan dengan HTML
+    -mengikuti kaidah bahasa C //karna PHP dibuat menggunakan bahasa C.
+
+seri 1
+//////////Belajar PHP untuk PEMULA | 3.PERSIAPAN LINGKUNGAN PENGEMBANGAN
+cient-side vs server-side scripting
+--Client-Side Scripting
+    -disaat kita menggunakan HTML, CSS, Javascript //karna semua pemrosesannya terjadi di sisi Client.
+--server-side scripting
+    -saat web di buat menggunakan php maka akan mengirim permintaan dari Client ke web server karna bahasa program berjalan di sisi server.
+
+-Web Browser
+    -Client side processing
+        -HTML, CSS, Javascript
+    // HTTP request > mengirim permintaan ke Web Server
+    // HTTP Response < balik
+-Web Server
+    -Apache, IIS, nginx, tomcat, lighttpd, dll
+    // Script execution > Mingirim ke bahasa program yang digunakan.
+    // HTML < balik ke Web Server
+-PHP, ASP, Ruby, Phyton
+    // Query >  dikirim ke Database
+    // Result Set < 
+-Database
+    MySQL, SQL Server, Oracle, PostgreSQL, dll
+
+itulah yang disebut lingkungan penegembangan.
+-Apache http://httpd.apache.org/download.cgi
+-PHP    http://www.php.net/downloads.php
+-MySQL  https://dev.mysql.com/download/
+-All-in-one Packages
+    WAMP        Windows +
+    MAMP        Max +
+    LAMP        Linux +
+    XAMPP       kros plat form +
+|
+|
+|
+pertemuan1
+
+
+//////////Belajar PHP untuk PEMULA | 4.SINTAKS PHP
+//////////Belajar PHP untuk PEMULA | 5.STRUKTUR KENDALI
+//////////Belajar PHP untuk PEMULA | 6.FUNCTION
+//////////Belajar PHP untuk PEMULA | 7.ARRAY
+//////////Belajar PHP untuk PEMULA | 8.ASSOCIATIVE ARRAY
+//////////Belajar PHP untuk PEMULA | 9.GET & POST
+//////////Belajar PHP untuk PEMULA | 10.DATABASE & MySQL
+//////////Belajar PHP untuk PEMULA | 11.PHP & MySQL
+//////////Belajar PHP untuk PEMULA | 12.INSERT & DELETE
+//////////Belajar PHP untuk PEMULA | 13.UPDATE
+//////////Belajar PHP untuk PEMULA | 14.SEARCHING
+//////////Belajar PHP untuk PEMULA | 15.UPLOAD
+//////////Belajar PHP untuk PEMULA | 16.REGISTRASI
+//////////Belajar PHP untuk PEMULA | 17.LOGIN
+//////////Belajar PHP untuk PEMULA | 18.SESSION
+//////////Belajar PHP untuk PEMULA | 19.COOKIE (Remember Me)
+//////////Belajar PHP untuk PEMULA | 20.PAGINATION
+//////////Belajar PHP untuk PEMULA | 21.LIVE SEARCH (menggunakan AJAX)
+//////////Belajar PHP untuk PEMULA | 22.LIVE SEARCH (menggunakan JQUERY)
+//////////Belajar PHP untuk PEMULA | 23.PDF REPORTING
+//////////Belajar PHP untuk PEMULA | 24.WEB HOSTING & DOMAIN NAME GRATIS
+//////////Belajar PHP untuk PEMULA | 24.WEB HOSTING & DOMAIN NAME BERBAYAR
+     
