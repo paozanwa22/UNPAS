@@ -13,7 +13,7 @@ Belajar PHP untuk PEMULA | 5.STRUKTUR KENDALI
 Belajar PHP untuk PEMULA | 6.FUNCTION
 	pertemuan4	//date, time, string
 Belajar PHP untuk PEMULA | 7.ARRAY
-	pertemuan5	//
+	pertemuan5	//Array numerik //rahasia foreach.
 Belajar PHP untuk PEMULA | 8.ASSOCIATIVE ARRAY
 Belajar PHP untuk PEMULA | 9.GET & POST
 Belajar PHP untuk PEMULA | 10.DATABASE & MySQL
