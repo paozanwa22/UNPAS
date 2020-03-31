@@ -9,7 +9,7 @@ Belajar PHP untuk PEMULA | 3.PERSIAPAN LINGKUNGAN PENGEMBANGAN
 Belajar PHP untuk PEMULA | 4.SINTAKS PHP
     pertemuan2
 Belajar PHP untuk PEMULA | 5.STRUKTUR KENDALI
-    
+    pertemuan3	//perulangan dan pengkondisian
 Belajar PHP untuk PEMULA | 6.FUNCTION
 Belajar PHP untuk PEMULA | 7.ARRAY
 Belajar PHP untuk PEMULA | 8.ASSOCIATIVE ARRAY
