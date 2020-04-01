@@ -16,12 +16,21 @@ Belajar PHP untuk PEMULA | 7.ARRAY
 	pertemuan5	//Array numerik //rahasia foreach.
 Belajar PHP untuk PEMULA | 8.ASSOCIATIVE ARRAY
 	pertemuan6	//key-nya adalah setring
+	masukkan img...
 Belajar PHP untuk PEMULA | 9.GET & POST
+	masukkan img...
 	pertemuan7	--metode reques GET adalah metode pengiriman data melalui URL dan
 			ditangkap oleh variable super global $_GET
 			--POST mebuat login pertama dan sederhana.
 Belajar PHP untuk PEMULA | 10.DATABASE & MySQL
+	pertemuan8 no folder
+	Data "representasi fakta di dunia nyata"
+	Database = data yang berada di dalam DBMS
+	DBMS jenis : relasional DBMS
+	MySQL : sofware untuk mengolah data.
+	Primary key	"sebuat data, yang dapat merepresentasikan satu baris record secara unik"
 Belajar PHP untuk PEMULA | 11.PHP & MySQL
+	pertemuan9..
 Belajar PHP untuk PEMULA | 12.INSERT & DELETE
 Belajar PHP untuk PEMULA | 13.UPDATE
 Belajar PHP untuk PEMULA | 14.SEARCHING
