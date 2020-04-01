@@ -30,8 +30,10 @@ Belajar PHP untuk PEMULA | 10.DATABASE & MySQL
 	MySQL : sofware untuk mengolah data.
 	Primary key	"sebuat data, yang dapat merepresentasikan satu baris record secara unik"
 Belajar PHP untuk PEMULA | 11.PHP & MySQL
-	pertemuan9..
+	pertemuan9 //menghubungkan ke database
+	yang akan terus di gunakan ke depannya
 Belajar PHP untuk PEMULA | 12.INSERT & DELETE
+	pertemuan10..
 Belajar PHP untuk PEMULA | 13.UPDATE
 Belajar PHP untuk PEMULA | 14.SEARCHING
 Belajar PHP untuk PEMULA | 15.UPLOAD
