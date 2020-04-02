@@ -33,7 +33,10 @@ Belajar PHP untuk PEMULA | 11.PHP & MySQL
 	pertemuan9 //menghubungkan ke database
 	yang akan terus di gunakan ke depannya
 Belajar PHP untuk PEMULA | 12.INSERT & DELETE
-	pertemuan10..
+	pertemuan10 
+	tolong perhatikan urutan fild database anda. karna itu harus sama dengan query yang ada buat.
+	tambah2.php adalah file yang belum di sempurnakan, yang berisi penjelasan baris-baris code.
+	tolong pahami maksud setiap baris code, karna itu akan melatih logika dan pemahaman untuk berkembang.
 Belajar PHP untuk PEMULA | 13.UPDATE
 Belajar PHP untuk PEMULA | 14.SEARCHING
 Belajar PHP untuk PEMULA | 15.UPLOAD
