@@ -38,11 +38,16 @@ Belajar PHP untuk PEMULA | 12.INSERT & DELETE
 	tambah2.php adalah file yang belum di sempurnakan, yang berisi penjelasan baris-baris code.
 	tolong pahami maksud setiap baris code, karna itu akan melatih logika dan pemahaman untuk berkembang.
 Belajar PHP untuk PEMULA | 13.UPDATE
+	pertemuan11
 	//perhatikan id //"UPDATE mahasiswa SET nama = '$nama',... WHERE id = $id";
 Belajar PHP untuk PEMULA | 14.SEARCHING
+	pertemuan12
 	input harus berada di form
 	return query($query);
 Belajar PHP untuk PEMULA | 15.UPLOAD
+	pertemuan13 //pengetahuan baru
+	mengubah di file tambah dan ubah
+	$_FILES, type="file", enctype="multipart/form-data", explode, strtolower(end($ekstensiGambar)), !in_array($ekstensiGambar, $ekstensiGambarValid), uniqid(), move_uploaded_file
 Belajar PHP untuk PEMULA | 16.REGISTRASI
 Belajar PHP untuk PEMULA | 17.LOGIN
 Belajar PHP untuk PEMULA | 18.SESSION
