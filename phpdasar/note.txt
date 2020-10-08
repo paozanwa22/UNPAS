@@ -1,3 +1,11 @@
+//menghilangkan yang tidak ingin di tampilkan saat mencetak
+@media print {
+	.logout {
+		display: none;
+	}
+}
+
+
 // Catatan poin mewakili isi pembahasan
 
 Belajar PHP untuk PEMULA | 1.Intro
@@ -34,25 +42,61 @@ Belajar PHP untuk PEMULA | 11.PHP & MySQL
 	yang akan terus di gunakan ke depannya
 Belajar PHP untuk PEMULA | 12.INSERT & DELETE
 	pertemuan10 
+		DELETE FROM anggota WHERE id = $id
 	tolong perhatikan urutan fild database anda. karna itu harus sama dengan query yang ada buat.
-	tambah2.php adalah file yang belum di sempurnakan, yang berisi penjelasan baris-baris code.
-	tolong pahami maksud setiap baris code, karna itu akan melatih logika dan pemahaman untuk berkembang.
+	required // mengharuskan inputan di isi
+	htmlspecialchar() // mencegah script HTML di jalankan (mengamankan inputan user).
+	onclick="return conpirm('yakin?')"
 Belajar PHP untuk PEMULA | 13.UPDATE
 	pertemuan11
+		"UPDATE anggota SET
+                    nama = '$nama',
+                    noHp = '$noHp',
+                    ttl = '$ttl',
+                    alamat = '$alamat',
+                    foto = '$foto'
+                WHERE id = $id
+            "
 	//perhatikan id //"UPDATE mahasiswa SET nama = '$nama',... WHERE id = $id";
+	value=""; menampilkan nilai
+	type="hidden"
 Belajar PHP untuk PEMULA | 14.SEARCHING
 	pertemuan12
-	input harus berada di form
-	return query($query);
+		"SELECT * FROM anggota WHERE 
+                nama LIKE '%$keyword%' OR
+                noHp LIKE '%$keyword%' OR
+                ttl LIKE '%$keyword%' OR
+                alamat LIKE '%$keyword%'
+            ";
+	size="40" autofocus placeholder="masukkan keyword pencarian" autocomplete="off";
+	return query($query); // menggunakan $query ke dalam function query yang sudah di buat sebelumnya.
 Belajar PHP untuk PEMULA | 15.UPLOAD
-	pertemuan13 //pengetahuan baru
-	mengubah di file tambah dan ubah
-	$_FILES, type="file", enctype="multipart/form-data", explode, strtolower(end($ekstensiGambar)), !in_array($ekstensiGambar, $ekstensiGambarValid), uniqid(), move_uploaded_file
+	pertemuan13 // File Handling
+		<input type="file"..
+		enctype
+		$_FILES
+		move_uploaded_file
+	$_FILES, type="file", enctype="multipart/form-data", 
+	explode //memecah string
+	strtolower(end($ekstensiGambar)), //mengambil yang paling terakhir dan membuat semua tulisan menjadi kecil
+	!in_array($ekstensiGambar, $ekstensiGambarValid), //mencari jarum dalam jerami(apakah exstensiGambar ada yang sama dengan $ekstensiGambarValid)
+	uniqid(), 
+	move_uploaded_file(tmpName, 'img/' . $namaFile ) // mengambil file yang di simpan sementara, kemudian memindahkan ke img/ yang di gabung dengan nama file.
 Belajar PHP untuk PEMULA | 16.REGISTRASI
+	pertemuan14
+		SELECT username FROM user WHERE username = '$username' 
+		"INSERT INTO user VALUE ('', '$username', '$password')"
+	stripcslashes() // membersihkan karakter yang di masukkan pada username
+	strtolower($conn, )//untuk memaksa semua menjadi huruf kecil
+	mysqli_real_escape_string($conn, )//memungkinkan user memasukkan password yang disertai dengan karakter
 Belajar PHP untuk PEMULA | 17.LOGIN
+	pertemuan 15
 Belajar PHP untuk PEMULA | 18.SESSION
+	pertemuan 16
 Belajar PHP untuk PEMULA | 19.COOKIE (Remember Me)
+	pertemuan 17
 Belajar PHP untuk PEMULA | 20.PAGINATION
+	pertemuan 18
 Belajar PHP untuk PEMULA | 21.LIVE SEARCH (menggunakan AJAX)
 Belajar PHP untuk PEMULA | 22.LIVE SEARCH (menggunakan JQUERY)
 Belajar PHP untuk PEMULA | 23.PDF REPORTING
